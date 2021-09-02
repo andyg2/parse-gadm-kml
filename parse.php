@@ -32,8 +32,15 @@ foreach($parts as $i => $part){
     
     // we have all the data we need and the geographic region has changed so dump the data and free up RAM.
     if(isset($record['outline']) && $last_NAME_1!=$record[$split_at_level] && !empty($data)){
+      
+      $output = [];
+      foreach($data as $place){
+        $output[$place['NAME_2']][$place['NAME_3']] = $place['outline'];
+      }
+      
+      
       $filename = $record[$split_at_level].'.json';
-      file_put_contents('./coords/'.$filename, json_encode($data, JSON_NUMERIC_CHECK));
+      file_put_contents('./coords/'.$filename, json_encode($output, JSON_NUMERIC_CHECK));
       $last_NAME_1 = $record[$split_at_level];
       $data = [];
     }
