@@ -26,7 +26,7 @@ foreach($parts as $i => $part){
       $coords = explode(' ',$line);
       foreach($coords as $coord){
         $geo = explode(',',$coord);
-        $record['outline'][] = $geo;
+        $record['outline'][] = ['lat'=>$geo[1],'lng'=>$geo[0]];
       }
     }
     
