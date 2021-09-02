@@ -10,7 +10,7 @@ On line 8 of parse.php I entered the filename:
 On line 6 of parse.php I instructed the wscript to split the output each time the NAME_1 (municipality) changes:
   > `$split_at_level = 'NAME_1';`
 
-[Coordinates to Map overlay Polygon](https://jsfiddle.net/andyg2/0t1gwnja/22/)
+[Coordinates to Map overlay Polygon](https://jsfiddle.net/andyg2/0t1gwnja/25/)
 
 
   
