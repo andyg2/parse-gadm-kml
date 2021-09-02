@@ -1,4 +1,4 @@
-# Parse gadm.org KML Parse to Google Maps Polygon
+# Parse gadm.org KML to Google Maps Polygon
 
 For this example I downloaded the Philippines KMZ level 3 file from here: https://gadm.org/download_country_v3.html
 
